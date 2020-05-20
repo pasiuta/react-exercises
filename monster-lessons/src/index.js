@@ -1,22 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {createStore ,applyMiddleware} from 'redux';
-import {composeWithDevTools} from 'redux-devtools-extension';
-import thunk from 'redux-thunk';
-import {Provider} from 'react-redux';
+// import {createStore ,applyMiddleware} from 'redux';
+// import {composeWithDevTools} from 'redux-devtools-extension';
+// import thunk from 'redux-thunk';
+// import {Provider} from 'react-redux';
 import './index.css';
-import App from './App';
-import reducer from './reducers';
-import * as serviceWorker from './serviceWorker';
-import { Router , Route, hashHistory} from 'react-router'
-const store = createStore(reducer,composeWithDevTools(applyMiddleware(thunk)));
+//import App from './App';
+// import reducer from './reducers';
+//import { Router , Route,} from 'react-router-dom'
+//import { HashRouter } from 'react-router-dom'
+//import About from './About'
+
+// const store = createStore(reducer,composeWithDevTools(applyMiddleware(thunk)));
 ReactDOM.render(
- <Provider store={store}>
-     <Router history={hashHistory}>
+    <div>hello</div>
+ /*<Provider store={store}>
+     <HashRouter>
          <Route path="/" component={App}/>
-     </Router>
+         <Router path="/about" component={About}/>
+
+     </HashRouter>
  </Provider>,
-    document.getElementById('root')
+    document.getElementById('root')*/
 );
 
 // If you want your app to work offline and load faster, you can change
